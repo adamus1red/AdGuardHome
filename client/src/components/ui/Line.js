@@ -9,7 +9,7 @@ import round from 'lodash/round';
 import { useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
 import './Line.css';
-import { formatNumber } from '../../helpers/helpers'
+import { formatNumber } from '../../helpers/helpers';
 
 const Line = ({
     data, color = 'black',
