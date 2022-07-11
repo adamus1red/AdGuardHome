@@ -9,7 +9,7 @@ import round from 'lodash/round';
 import { useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
 import './Line.css';
-import { formatNumber } from '../../../helpers/helpers'
+import { formatNumber } from '../../helpers/helpers'
 
 const Line = ({
     data, color = 'black',
@@ -57,7 +57,7 @@ const Line = ({
             const { xFormatted, yFormatted } = slice.slice.points[0].data;
             return <div className="line__tooltip">
                 <span className="line__tooltip-text">
-                    <strong>{formatNumber{yFormatted}}</strong>
+                    <strong>{formatNumber(yFormatted)}</strong>
                     <br />
                     <small>{xFormatted}</small>
                 </span>
